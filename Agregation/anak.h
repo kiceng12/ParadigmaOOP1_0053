@@ -3,14 +3,12 @@
 
 class anak {
     public:
-    string name;
-    jantung varJantung;
-
-    manusia(string pName)
-        : name(pName) {
-        cout << name << " hidup\n";
+    string nama;
+    anak(string pNama) :nama(pNama) {
+        cout << "Anak \"" << nama << "\" ada\n";
     }
-    ~manusia() {
-        cout << name << " mati\n";
+    ~anak() {
+        cout << "Anak \"" << nama << "\" tidak ada\n";
     }
 };
+#endif
